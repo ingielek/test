@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import { Navbar, NavItem, MenuItem, Nav, NavDropdown } from 'react-bootstrap';
+import SearchBar from "./SearchBar";
 
 
 export default class NavBar extends Component {
@@ -34,6 +35,9 @@ export default class NavBar extends Component {
                         </NavItem>
                         <NavItem eventKey={2} href="#">
                             Notify Nearest Pet Shelter
+                        </NavItem>
+                        <NavItem>
+                            <SearchBar/>
                         </NavItem>
                     </Nav>
                 </Navbar.Collapse>
